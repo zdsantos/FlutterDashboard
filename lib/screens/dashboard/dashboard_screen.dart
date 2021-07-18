@@ -1,5 +1,7 @@
 import 'package:admin/constants.dart';
+import 'package:admin/screens/dashboard/components/chat.dart';
 import 'package:admin/screens/dashboard/components/header.dart';
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 class DashboardScreen extends StatelessWidget {
@@ -18,8 +20,11 @@ class DashboardScreen extends StatelessWidget {
                 Expanded(
                   flex: 5,
                   child: Container(
-                    color: Colors.white54,
                     height: 500,
+                    decoration: BoxDecoration(
+                      color: secondaryColor,
+                      borderRadius: const BorderRadius.all(Radius.circular(10))
+                    ),
                   ),
                 ),
                 SizedBox(width: defaultPadding,),
@@ -40,6 +45,8 @@ class DashboardScreen extends StatelessWidget {
                             fontWeight: FontWeight.w500,
                           ),
                         ),
+                        SizedBox(height: defaultPadding,),
+                        Chart(),
                       ],
                     ),
                   ),
