@@ -1,3 +1,3 @@
-# FLutter Dashboard
+# Flutter Dashboard
 
-A study project to practice Flutter
+A study project to practice Flutter.
